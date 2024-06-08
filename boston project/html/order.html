@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="/css/order.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.0.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <header class="header">
+        <nav>
+          <div class="nav__bar">
+            <div class="logo">
+              <a href="#"><img src="images/boston logo.png" alt="logo" /></a>
+            </div>
+            <div class="nav__menu__btn" id="menu-btn">
+              <i class="ri-menu-line"></i>
+            </div>
+          </div>
+          <ul class="nav__links" id="nav-links">
+            <li><a href="index.html"><i class="fas fa-house-user"></i>  Home</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i>  About Us</a></li>
+            <li><a href="services.html"><i class="fas fa-briefcase"></i>  Services</a></li>
+            <li><a href="#explore"><i class="fas fa-compass"></i>  Explore</a></li>
+            <li><a href="#contact"><i class="fas fa-phone"></i>  Contact</a></li>
+            <li><a href="menu.html"><i class="fas fa-th-list"></i>  Menu</a></li>
+          </ul>
+          <a href="book.html"><button class="btn nav__btn">Book Now</button></a>
+        </nav>
+    </header>
+
+    <section class="order-form">
+        <h2>Order Your Meal</h2>
+        <form id="orderForm">
+            <label for="mealType">Select Meal Type:</label>
+            <select id="mealType" name="mealType">
+                <option value="burger">Burger</option>
+                <option value="sandwich">Sandwich</option>
+                <option value="pizza">Pizza</option>
+                <option value="momo">Mo:Mo</option>
+                <option value="sukuti">Sukuti</option>
+                <option value="newari">Newari Khaja Set</option>
+                <option value="nepali">Nepali Khana</option>
+                <option value="chicken">Fried Chicken</option>
+                <option value="noodles">Noodles</option>
+                <option value="noodles">Browniee With Icecream</option>
+                <option value="noodles">Cupcakes</option>
+                <option value="noodles">Chocolate Cake</option>
+            </select>
+
+            <label for="dietary">Dietary Preference:</label>
+            <select id="dietary" name="dietary">
+                <option value="veg">Vegetarian</option>
+                <option value="nonveg">Non-Vegetarian</option>
+                <option value="vegan">Vegan</option>
+            </select>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" value="1">
+
+            <p id="totalPrice">Total Price: Rs. 0</p>
+
+            <button type="submit">Order Now</button>
+        </form>
+    </section>
+
+    <script src="/js/order.js"></script>
+</body>
+</html>
